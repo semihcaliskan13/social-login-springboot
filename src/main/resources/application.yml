@@ -1,0 +1,21 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: 102045876809-4l5r5qu9flvi64olfu5mnu0672fmu2rs.apps.googleusercontent.com
+            client-secret: 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
+            scope: profile, email
+          github:
+            client-id: 1245b570a91c0c0882a7
+            client-secret: 12af43e0d1a6a144264f30fa56dafa4331e536a0
+            scope: read:user, user:email
+
+app:
+  jwt:
+    secret: mysecretkeyisthisvgfnhgfhgfhjgfjhdrftgwetfdgdfhgfjx
+    expiration:
+      minutes: 10
+  oauth2:
+    redirectUri: http://localhost:8080/home
